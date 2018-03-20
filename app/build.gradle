@@ -7,7 +7,7 @@ apply plugin: 'com.shazam.fork'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.tubitv.tubitv"
+        applicationId "com.tubitv"
         minSdkVersion 21
         targetSdkVersion 26
         versionCode 1
@@ -37,7 +37,7 @@ dependencies {
 
 }
 
-def autPackageName = "com.tubitv.tubitv"
+def autPackageName = "com.tubitv"
 import com.android.ddmlib.AndroidDebugBridge
 import com.android.ddmlib.IDevice
 // From https://android.googlesource.com/platform/tools/build/+/925c0b5cf8730105dd5aa8c851141d5688d07789/gradle/src/main/groovy/com/android/build/gradle/internal/tasks/TestFlavorTask.groovy
@@ -102,7 +102,7 @@ afterEvaluate {
 // Execute `./gradlew --stop` to fix "com.shazam.fork.pooling.NoDevicesForPoolException: No devices found." error
 fork {
     title = "Acceptance tests"
-    testPackage = "com.bayqa.mobile.testultimateandroidbootcamp"
+    testPackage = "com.tubitv.tubitv"
     fallbackToScreenshots = true
     totalAllowedRetryQuota = 1
 
